@@ -291,9 +291,8 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted, watch } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import { useToast } from 'vue-toastification'
-import VueMarkdown from 'vue3-markdown-it'
 import { 
   BookOpen, 
   Search, 
@@ -529,10 +528,6 @@ const handleTextSelection = () => {
   }
 }
 
-const handleAskAI = () => {
-  showAIAssistant.value = true
-  selectionPosition.value = null
-}
 </script>
 
 <style scoped>
